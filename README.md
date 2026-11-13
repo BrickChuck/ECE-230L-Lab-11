@@ -20,7 +20,7 @@ In this lab we programmed an up-counter using a modulo-6 system utilizing the fu
 ## Lab Questions
 
 ### 1 - Why does the Modulo Counter actually divide clocks by 2 * Count?
-Because the data is only stored on a rising positive edge or falling edge (positive edge in our case), it takes double the Hz to change the value on the next counter, thus dividing it by 2^n. 
+Because the data is only stored on a rising positive edge or falling edge (positive edge in our case), it takes double the Hz to change the value on the next counter, thus dividing it by 2 for every N width of the counter. 
 
 ### 2 - Why does the ring counter's output go to all 1s on the first clock cycle?
 All of them read the first positive edge of the first clock signal we input. Further signals 
